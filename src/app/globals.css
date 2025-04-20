@@ -1,16 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind typography;
-@tailwind forms;
-@tailwind aspect-ratio;
-@tailwind line-clamp;
 @tailwind screens;
-@tailwind animations;
-@tailwind transitions;
-@tailwind filters;
-@tailwind gradients;
-@tailwind shadows;
 
 :root {
   --foreground-rgb: 0, 0, 0;
