@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Biographie - Karyn Danse',
+	title: 'Biographie - Karyne Danse',
 	description:
 		'Découvrez le parcours et la biographie de Karyn, professeure de danse passionnée',
 };

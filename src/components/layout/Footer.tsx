@@ -7,7 +7,7 @@ export default function Footer() {
 				<div className='grid md:grid-cols-3 gap-8'>
 					{/* Colonne 1 */}
 					<div>
-						<h3 className='text-xl font-bold mb-4'>Karyn Danse</h3>
+						<h3 className='text-xl font-bold mb-4'>Karyne Danse</h3>
 						<p className='mb-4'>
 							École de danse proposant des cours pour tous les âges et tous les
 							niveaux.
@@ -90,7 +90,7 @@ export default function Footer() {
 
 				<div className='border-t border-gray-200 mt-8 pt-6 text-center text-sm'>
 					<p>
-						&copy; {new Date().getFullYear()} Karyn Danse. Tous droits réservés.
+						&copy; {new Date().getFullYear()} Karyne Danse. Tous droits réservés.
 					</p>
 				</div>
 			</div>
