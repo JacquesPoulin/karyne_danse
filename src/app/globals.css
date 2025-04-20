@@ -1,26 +1,58 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind typography;
+@tailwind forms;
+@tailwind aspect-ratio;
+@tailwind line-clamp;
+@tailwind screens;
+@tailwind animations;
+@tailwind transitions;
+@tailwind filters;
+@tailwind gradients;
+@tailwind shadows;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 250, 250;
+  --primary-color: 186, 21, 175;
+  --primary-dark: 103, 4, 96;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 30, 30, 30;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .section {
+    @apply py-12 md:py-20;
+  }
+  
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900;
+  }
+  
+  .heading-2 {
+    @apply text-3xl md:text-4xl font-bold text-gray-900;
+  }
+  
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-bold text-gray-900;
+  }
+  
+  .paragraph {
+    @apply text-base md:text-lg text-gray-700;
+  }
 }
