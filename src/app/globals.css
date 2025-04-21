@@ -61,3 +61,39 @@ body {
   background-size: 100% 4px;
   height: 100%;
 }
+
+/* Effet de lueur pour les boutons */
+.hover\:shadow-glow-primary:hover {
+  box-shadow: 0 0 15px 5px rgba(186, 21, 175, 0.4);
+}
+
+/* Animation de la flèche de défilement */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce 2s infinite;
+}
+
+/* Effet de texture pour vidéos et images */
+.texture-overlay {
+  background-image: url('/images/noise-texture.png');
+  background-repeat: repeat;
+  mix-blend-mode: overlay;
+  opacity: 0.1;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
