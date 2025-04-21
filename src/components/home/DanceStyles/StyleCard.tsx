@@ -38,7 +38,7 @@ export function StyleCard({ style, isActive, onHover, onLeave }: StyleCardProps)
         )}
         <div className={`absolute inset-0 bg-gradient-to-t ${style.color} opacity-70`}></div>
         <div className='absolute inset-0 flex items-center justify-center'>
-          <h3 className='text-3xl font-bold text-white drop-shadow-lg'>
+          <h3 className='font-rock text-3xl font-bold text-white drop-shadow-lg'>
             {style.title}
           </h3>
         </div>

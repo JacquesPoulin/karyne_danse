@@ -108,19 +108,19 @@ export default function EventCard({
               <p className="text-gray-300 mb-6">
                 {event.description || "Plus d'informations à venir prochainement."}
               </p>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 justify-center">
                 <Link
-                  href={`/evenements/${event.id}`}
+                  href={`/contact`}
                   className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
                 >
                   Réserver
                 </Link>
-                <Link
+                {/* <Link
                   href={`/evenements/${event.id}`}
                   className="px-4 py-2 border border-purple-500 text-purple-500 rounded-lg hover:bg-purple-900/30 transition-colors"
                 >
                   Plus d'infos
-                </Link>
+                </Link> */}
               </div>
             </motion.div>
           )}
