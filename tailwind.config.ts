@@ -33,7 +33,7 @@ const config: Config = {
 				},
 			},
 			fontFamily: {
-				sans: ['var(--font-quicksand)', 'Quicksand', 'sans-serif'],
+				quick: ['var(--font-quicksand)', 'Quicksand', 'sans-serif'],
 				rock: ['var(--font-rock-salt)', 'Rock Salt', 'cursive'],
 				// Autres polices pour compatibilité
 				display: ['var(--font-playfair-display)', 'Playfair Display', 'serif'],

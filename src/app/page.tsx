@@ -10,7 +10,7 @@ export default function Home() {
 				{/* Remplacer par une vraie image de danse */}
 				<div className='absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500'></div>
 				<div className='container mx-auto px-6 relative z-20 text-center text-white'>
-					<h1 className='text-4xl md:text-6xl font-bold mb-6'>Karyne Danse</h1>
+					<h1 className='font-rock text-4xl md:text-6xl font-bold mb-6'>Karyne Danse</h1>
 					<p className='text-xl md:text-2xl mb-8 max-w-3xl mx-auto'>
 						Découvrez l'art de la danse sous toutes ses formes
 					</p>
@@ -34,7 +34,7 @@ export default function Home() {
 				<div className='container mx-auto px-6'>
 					<div className='flex flex-col md:flex-row items-center gap-12'>
 						<div className='md:w-1/2'>
-							<h2 className='font-sans text-3xl font-bold mb-6'>
+							<h2 className='font-quick text-3xl font-bold mb-6'>
 								Bienvenue chez Karyne Danse
 							</h2>
 							<p className='text-gray-600 mb-4'>

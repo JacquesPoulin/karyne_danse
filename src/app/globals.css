@@ -49,3 +49,15 @@ body {
     @apply text-base md:text-lg text-gray-700;
   }
 }
+
+/* Effet de scanline pour le glitch */
+.bg-scanline {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    transparent 100%
+  );
+  background-size: 100% 4px;
+  height: 100%;
+}

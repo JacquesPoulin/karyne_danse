@@ -32,9 +32,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='fr' className={`${quicksand.variable} ${rockSalt.variable}`}>
-			<body className='min-h-screen flex flex-col font-sans'>
+			<body className='min-h-screen flex flex-col font-quick'>
 				<Header />
-				<main className='flex-grow'>{children}</main>
+				<main className='flex-grow pt-24'>{children}</main>
 				<Footer />
 			</body>
 		</html>
