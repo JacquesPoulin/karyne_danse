@@ -67,14 +67,14 @@ export default function CTA() {
           Prêt à entrer dans la danse ?
         </h2>
         <p className='text-xl md:text-2xl mb-12 max-w-2xl mx-auto text-white/90 animate-item'>
-          Premier cours d'essai <span className='font-bold'>gratuit</span>.
+          {/* Premier cours d'essai <span className='font-bold'>gratuit</span>. */}
           Rejoignez-nous et découvrez votre style !
         </p>
         <div className='animate-item'>
           <motion.div
             whileHover={{
               scale: 1.05,
-              boxShadow: '0 15px 30px -10px rgba(0,0,0,0.2)',
+              transition: { duration: 0.3 },
             }}
             whileTap={{ scale: 0.98 }}>
             <Link

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const testimonials = [
   {
     quote:
-      "Grâce à Karyne Danse, j'ai gagné en confiance et en technique. Les cours sont dynamiques et l'ambiance est formidable!",
+      "Grâce à Karyn' Danse, j'ai gagné en confiance et en technique. Les cours sont dynamiques et l'ambiance est formidable!",
     author: 'Sophie M.',
     role: 'Élève depuis 2 ans',
     avatar: '/images/testimonial-1.jpg',

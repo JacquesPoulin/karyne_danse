@@ -20,7 +20,9 @@ export default function Hero() {
 		<motion.section
 			className='relative h-screen w-full overflow-hidden'
 			style={{ scale: heroScale }}>
-			<motion.div style={{ opacity: heroOpacity }}>
+			<motion.div
+				style={{ opacity: heroOpacity }}
+				className='absolute inset-0 w-full h-full'>
 				<HeroVideo />
 				<div className='absolute inset-0 bg-black/50 z-10'></div>
 			</motion.div>
@@ -35,8 +37,8 @@ export default function Hero() {
 					<motion.h1
 						className='text-5xl md:text-7xl font-bold mb-6'
 						variants={heroItemVariants}>
-						<span className='font-rock text-transparent bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text'>
-							Karyne Danse
+						<span className='font-rock text-transparent bg-gradient-to-r from-white to-pink-500 bg-clip-text'>
+							Karyn' Danse
 						</span>
 					</motion.h1>
 
@@ -76,7 +78,7 @@ export default function Hero() {
 			</motion.div>
 
 			{/* Chevron animé indiquant de défiler */}
-			<motion.div
+			{/* <motion.div
 				className='absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20'
 				animate={{
 					y: [0, 10, 0],
@@ -96,7 +98,7 @@ export default function Hero() {
 						d='M19 14l-7 7m0 0l-7-7m7 7V3'
 					/>
 				</svg>
-			</motion.div>
+			</motion.div> */}
 		</motion.section>
 	);
 }

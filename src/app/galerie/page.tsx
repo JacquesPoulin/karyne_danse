@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-	title: 'Galerie - Karyne Danse',
+	title: "Galerie - Karyn' Danse",
 	description:
 		'Découvrez nos photos et vidéos de cours, spectacles et événements',
 };

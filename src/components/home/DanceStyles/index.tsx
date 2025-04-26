@@ -28,7 +28,7 @@ export default function DanceStyles() {
             de Danse
           </h2>
           <p className='text-xl text-gray-300 max-w-3xl mx-auto'>
-            Découvrez les différents univers de danse proposés par Karyne Danse
+            Découvrez les différents univers de danse proposés par Karyn' Danse
           </p>
         </motion.div>
 

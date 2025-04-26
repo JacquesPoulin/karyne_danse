@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Contact - Karyne Danse',
+	title: "Contact - Karyn' Danse",
 	description: "Contactez-nous pour plus d'informations sur nos cours de danse",
 };
 
@@ -22,7 +22,7 @@ export default function Contact() {
 						<strong>Téléphone:</strong> 01 23 45 67 89
 					</p>
 					<p className='mb-2'>
-						<strong>Email:</strong> contact@karyndanse.fr
+						<strong>Email:</strong> contact@karynDanse.fr
 					</p>
 
 					<h3 className='text-xl font-semibold mt-6 mb-3'>

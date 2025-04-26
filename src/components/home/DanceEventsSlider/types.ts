@@ -6,10 +6,11 @@ export interface Event {
   location: string;
   image: string;
   description?: string;
+  fullDate?: string; // Format YYYY-MM-DD pour faciliter la comparaison (optionnel)
 }
 
 export type MonthEvents = {
-  [key: string]: Event[];
+  [month: string]: Event[];
 };
 
 export interface EventCardProps {

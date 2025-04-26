@@ -12,7 +12,7 @@ export const danceStyles: DanceStyle[] = [
     ],
     color: 'from-blue-600 to-purple-600',
     bgColor: 'hover:bg-blue-900/20',
-    image: '/images/hiphop.jpg',
+    image: '/images/karyn/dance_1.jpeg',
   },
   {
     id: 'ragga',
@@ -25,7 +25,7 @@ export const danceStyles: DanceStyle[] = [
     ],
     color: 'from-pink-500 to-red-500',
     bgColor: 'hover:bg-pink-900/20',
-    image: '/images/ragga.jpg',
+    image: '/images/karyn/dance_2.jpeg',
   },
   {
     id: 'dancehall',
@@ -38,6 +38,6 @@ export const danceStyles: DanceStyle[] = [
     ],
     color: 'from-yellow-500 to-orange-500',
     bgColor: 'hover:bg-yellow-900/20',
-    image: '/images/dancehall.jpg',
+    image: '/images/karyn/dance_3.jpg',
   },
 ];

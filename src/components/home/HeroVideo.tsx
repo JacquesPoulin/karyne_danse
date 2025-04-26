@@ -6,10 +6,16 @@ import { motion } from 'framer-motion';
 export default function HeroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
+    console.log("HeroVideo monté");
+    
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.8; // Ralentir légèrement la vidéo
+      videoRef.current.play().catch((error) => {
+        console.error('Erreur lecture vidéo:', error);
+        setHasError(true);
+      });
     }
   }, []);
 
@@ -33,13 +39,11 @@ export default function HeroVideo() {
         transition={{ duration: 1 }}
         onLoadedData={() => setIsLoaded(true)}
       >
-        {/* Remplacer le chemin ci-dessous par l'URL de votre vidéo */}
-        <source src="/videos/dance-background.mp4" type="video/mp4" />
+        <source src="/videos/video3.mp4" type="video/mp4" />
         Votre navigateur ne prend pas en charge la lecture de vidéos.
       </motion.video>
       
-      {/* Effet de grain pour un look plus urbain et authentique */}
-      <div className="absolute inset-0 opacity-20 z-5 pointer-events-none bg-[url('/images/grain-texture.png')] bg-repeat"></div>
+     
     </>
   );
 }

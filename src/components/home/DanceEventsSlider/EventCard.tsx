@@ -4,8 +4,17 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { EventCardProps } from './types';
 import { itemVariants, expandAnimation } from './animations';
+import { isEventPassed } from './utils';
+import { Event } from './types';
+
+interface EventCardProps {
+  event: Event;
+  isExpanded: boolean;
+  onToggleExpand: () => void;
+  imageError: boolean;
+  onImageError: () => void;
+}
 
 export default function EventCard({
   event,
@@ -14,16 +23,25 @@ export default function EventCard({
   imageError,
   onImageError,
 }: EventCardProps) {
+  const isPassed = isEventPassed(event);
+  
   return (
     <motion.div
       key={event.id}
       variants={itemVariants}
-      className={`bg-gray-800/70 backdrop-blur-sm rounded-xl overflow-hidden transition-all duration-500 ${
+      className={`${isPassed ? 'bg-gray-800/90 grayscale' : 'bg-gray-800/70'} backdrop-blur-sm rounded-xl overflow-hidden transition-all duration-500 ${
         isExpanded ? 'md:col-span-2 md:row-span-2' : ''
       }`}
       onClick={onToggleExpand}
     >
       <div className="relative">
+        {/* Badge "Événement passé" */}
+        {isPassed && (
+          <div className="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-lg z-20 font-semibold transform rotate-3">
+            Événement passé
+          </div>
+        )}
+        
         <div
           className={`relative ${
             isExpanded ? 'h-80' : 'h-48'
@@ -38,7 +56,7 @@ export default function EventCard({
               src={event.image}
               alt={event.title}
               fill
-              className="object-cover transition-transform duration-700 hover:scale-110"
+              className={`object-cover transition-transform duration-700 ${!isPassed ? 'hover:scale-110' : 'opacity-75'}`}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               priority={isExpanded}
               onError={onImageError}
@@ -48,7 +66,7 @@ export default function EventCard({
         </div>
 
         {/* Date flottante */}
-        <div className="absolute top-4 left-4 bg-purple-600 text-white px-3 py-2 rounded-lg">
+        <div className={`absolute top-4 left-4 ${isPassed ? 'bg-gray-600' : 'bg-purple-600'} text-white px-3 py-2 rounded-lg`}>
           <div className="text-xs uppercase">Date</div>
           <div className="font-bold">{event.date}</div>
         </div>
@@ -109,18 +127,18 @@ export default function EventCard({
                 {event.description || "Plus d'informations à venir prochainement."}
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
-                <Link
-                  href={`/contact`}
-                  className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
-                >
-                  Réserver
-                </Link>
-                {/* <Link
-                  href={`/evenements/${event.id}`}
-                  className="px-4 py-2 border border-purple-500 text-purple-500 rounded-lg hover:bg-purple-900/30 transition-colors"
-                >
-                  Plus d'infos
-                </Link> */}
+                {!isPassed ? (
+                  <Link
+                    href={`/contact`}
+                    className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                  >
+                    Réserver
+                  </Link>
+                ) : (
+                  <span className="px-4 py-2 bg-gray-700 text-gray-300 rounded-lg cursor-not-allowed">
+                    Terminé
+                  </span>
+                )}
               </div>
             </motion.div>
           )}
@@ -128,7 +146,7 @@ export default function EventCard({
 
         {!isExpanded && (
           <motion.button
-            className="w-full mt-2 text-sm text-purple-400 hover:text-purple-300 flex items-center justify-center"
+            className={`w-full mt-2 text-sm ${isPassed ? 'text-gray-400 hover:text-gray-300' : 'text-purple-400 hover:text-purple-300'} flex items-center justify-center`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

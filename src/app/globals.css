@@ -21,12 +21,23 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  /* background: rgb(var(--background-rgb)); */
+  background: #0e0520;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  overscroll-behavior-x: none;
 }
 
 @layer components {
   .container {
-    @apply px-4 mx-auto max-w-7xl;
+    @apply px-4 mx-auto max-w-full;
   }
   
   .section {

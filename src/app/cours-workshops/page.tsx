@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Cours & Workshops - Karyne Danse',
+	title: "Cours & Workshops - Karyn' Danse",
 	description: 'Découvrez tous les cours de danse et workshops proposés',
 };
 

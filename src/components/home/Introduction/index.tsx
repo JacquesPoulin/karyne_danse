@@ -20,7 +20,7 @@ export default function Introduction() {
           <h2 className='text-3xl md:text-4xl font-bold mb-6 text-white'>
             Bienvenue dans l'univers{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500'>
-              Karyne Danse
+              Karyn' Danse
             </span>
           </h2>
           <p className='text-gray-300 text-lg leading-relaxed mb-8'>

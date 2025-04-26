@@ -116,8 +116,8 @@ export default function Header() {
 			transition={{ duration: 0.5 }}
 			className={`fixed w-full z-50 transition-all duration-300 ${
 				scrolled
-					? 'bg-white/90 backdrop-blur-sm shadow-md py-4' // Style avec arrière-plan lors du défilement
-					: 'bg-transparent py-6' // Sans arrière-plan au début de la page
+				? 'bg-white/90 backdrop-blur-sm shadow-md py-6' // Style avec arrière-plan lors du défilement
+				: 'bg-transparent py-6' // Style transparent sans arrière-plan ni pointeurs
 			}`}>
 			<nav className='container mx-auto px-4'>
 				<div className='flex justify-between items-center'>
@@ -133,7 +133,11 @@ export default function Header() {
 							<div className='relative overflow-hidden'>
 								{/* Texte principal */}
 								<motion.span
-									className='font-rock text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-purple-700 bg-clip-text text-transparent inline-block'
+									className={
+										scrolled
+											? 'font-rock text-2xl md:text-3xl font-bold bg-gradient-to-r from-karyn-500 to-karyn-950 bg-clip-text text-transparent inline-block'
+											: 'font-rock text-2xl md:text-3xl font-bold bg-gradient-to-r from-karyn-100 to-karyn-200 bg-clip-text text-transparent inline-block'
+									}
 									animate={
 										isGlitching
 											? {
@@ -146,7 +150,7 @@ export default function Header() {
 											  }
 											: {}
 									}>
-									Karyne Danse
+									Karyn' Danse
 								</motion.span>
 
 								{/* Effet de glitch - Couche cyan */}
@@ -166,7 +170,7 @@ export default function Header() {
 											: {}
 									}
 									aria-hidden='true'>
-									Karyne Danse
+									Karyn' Danse
 								</motion.span>
 
 								{/* Effet de glitch - Couche magenta */}
@@ -187,7 +191,7 @@ export default function Header() {
 											: {}
 									}
 									aria-hidden='true'>
-									Karyne Danse
+									Karyn' Danse
 								</motion.span>
 
 								{/* Barre en dessous */}
