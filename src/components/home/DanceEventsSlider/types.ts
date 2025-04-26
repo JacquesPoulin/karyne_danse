@@ -1,20 +1,10 @@
-export interface Event {
-  id: number;
-  title: string;
-  date: string;
-  time: string;
-  location: string;
-  image: string;
-  description?: string;
-  fullDate?: string; // Format YYYY-MM-DD pour faciliter la comparaison (optionnel)
-}
+// Import des types depuis le fichier centralisé
+import { Event as GlobalEvent, MonthEvents as GlobalMonthEvents } from '@/types/events';
 
-export type MonthEvents = {
-  [month: string]: Event[];
-};
+export type { GlobalEvent as Event, GlobalMonthEvents as MonthEvents };
 
 export interface EventCardProps {
-  event: Event;
+  event: GlobalEvent;  // Utilisation du type importé
   isExpanded: boolean;
   onToggleExpand: () => void;
   imageError: boolean;

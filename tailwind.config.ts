@@ -31,6 +31,10 @@ const config: Config = {
 					900: '#4f0352',
 					950: '#3a0143',
 				},
+				// Autres couleurs personnalisées
+				whatsapp: '#25D366',
+				call: '#820e85',
+				sms: '#e095db',
 			},
 			fontFamily: {
 				quick: ['var(--font-quicksand)', 'Quicksand', 'sans-serif'],

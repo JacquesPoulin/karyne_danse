@@ -296,7 +296,7 @@ export default function Header() {
 						aria-label='Toggle menu'>
 						<div className='relative w-6 h-5'>
 							<motion.span
-								className='absolute h-0.5 w-6 bg-gray-800 transform transition-all duration-300 ease-in-out'
+								className='absolute h-0.5 w-6 bg-karyn-500 transform transition-all duration-300 ease-in-out'
 								animate={{
 									top: isMenuOpen ? '50%' : '0%',
 									rotate: isMenuOpen ? '45deg' : '0deg',
@@ -304,14 +304,14 @@ export default function Header() {
 								}}
 							/>
 							<motion.span
-								className='absolute top-1/2 h-0.5 w-6 bg-gray-800 -translate-y-1/2 transition-all duration-300 ease-in-out'
+								className='absolute top-1/2 h-0.5 w-6 bg-karyn-500 -translate-y-1/2 transition-all duration-300 ease-in-out'
 								animate={{
 									opacity: isMenuOpen ? 0 : 1,
 									width: isMenuOpen ? 0 : '100%',
 								}}
 							/>
 							<motion.span
-								className='absolute h-0.5 w-6 bg-gray-800 transform transition-all duration-300 ease-in-out'
+								className='absolute h-0.5 w-6 bg-karyn-500 transform transition-all duration-300 ease-in-out'
 								animate={{
 									bottom: isMenuOpen ? '50%' : '0%',
 									rotate: isMenuOpen ? '-45deg' : '0deg',
@@ -337,13 +337,13 @@ export default function Header() {
 										key={link.href}
 										variants={mobileLinkVariants}
 										custom={i}
-										className='overflow-hidden'>
+										className='overflow-hidden text-center'>
 										<Link
 											href={link.href}
 											className={`block py-2 px-3 rounded-lg transition-colors ${
 												pathname === link.href
 													? 'bg-primary/10 text-primary'
-													: 'hover:bg-gray-100 text-gray-800'
+													: 'hover:bg-karyn-200 text-gray-800'
 											}`}
 											onClick={() => setIsMenuOpen(false)}>
 											{link.label}
@@ -355,7 +355,7 @@ export default function Header() {
 								<motion.div variants={mobileLinkVariants} className='pt-2'>
 									<Link
 										href='/contact'
-										className='block text-center py-2.5 px-4 rounded-lg bg-gradient-to-r from-primary to-primary-dark text-white font-medium transition-all hover:shadow-lg'
+										className='block text-center py-2.5 px-4 rounded-lg bg-gradient-to-r from-primary to-primary-dark text-white font-medium transition-all hover:shadow-lg hover:scale-105'
 										onClick={() => setIsMenuOpen(false)}>
 										Réserver un cours
 									</Link>

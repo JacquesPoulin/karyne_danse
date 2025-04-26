@@ -6,8 +6,8 @@ import { fadeInUp } from '../animations';
 
 const stats = [
   { number: '10+', label: "Années d'expérience" },
-  { number: '500+', label: 'Élèves formés' },
-  { number: '30+', label: 'Événements organisés' },
+  { number: '200+', label: 'Élèves formés' },
+  { number: '50+', label: 'Événements organisés' },
 ];
 
 export default function Introduction() {

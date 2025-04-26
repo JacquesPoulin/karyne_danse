@@ -1,21 +1,22 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
-
-interface LinkItem {
-  text: string;
-  href: string;
-}
+import { QuickLink } from './data/quickLinks';
 
 interface QuickLinksProps {
-  links: LinkItem[];
+  links: QuickLink[];
 }
 
 export default function QuickLinks({ links }: QuickLinksProps) {
   return (
     <ul className="space-y-2">
-      {links.map((link, index) => (
-        <li key={index}>
-          <Link href={link.href} className="hover:text-purple-600">
+      {links.map((link) => (
+        <li key={link.href}>
+          <Link 
+            href={link.href}
+            className="text-gray-300 hover:text-white transition-colors duration-300"
+          >
             {link.text}
           </Link>
         </li>

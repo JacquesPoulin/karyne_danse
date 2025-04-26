@@ -21,10 +21,10 @@ export default function Hero() {
 			className='relative h-screen w-full overflow-hidden'
 			style={{ scale: heroScale }}>
 			<motion.div
-				style={{ opacity: heroOpacity }}
-				className='absolute inset-0 w-full h-full'>
-				<HeroVideo />
-				<div className='absolute inset-0 bg-black/50 z-10'></div>
+			style={{ opacity: heroOpacity }}
+			className='absolute inset-0 w-full h-full'>
+			<HeroVideo />
+			<div className='absolute inset-0 bg-black/50 z-10'></div>
 			</motion.div>
 
 			<motion.div

@@ -16,13 +16,13 @@ export default function Contact() {
 						Informations de contact
 					</h2>
 					<p className='mb-2'>
-						<strong>Adresse:</strong> 123 Rue de la Danse, 75000 Paris
+						<strong>Adresse:</strong> 123 Rue de la Danse, 64100 BAYONNE
 					</p>
 					<p className='mb-2'>
-						<strong>Téléphone:</strong> 01 23 45 67 89
+						<strong>Téléphone:</strong> 06 06 06 06 06
 					</p>
 					<p className='mb-2'>
-						<strong>Email:</strong> contact@karynDanse.fr
+						<strong>Email:</strong> k.hiphoprespect@yahoo.fr
 					</p>
 
 					<h3 className='text-xl font-semibold mt-6 mb-3'>
