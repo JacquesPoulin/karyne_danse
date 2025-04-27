@@ -24,7 +24,7 @@ export default function Contact() {
 	return (
 		<div className='container mx-auto px-4 py-12'>
 			<Toaster position='top-center' />
-			<h1 className='text-3xl md:text-4xl font-bold mb-8'>Contactez-nous</h1>
+			<h1 className='text-3xl md:text-4xl font-bold mb-8'>Me contacter</h1>
 
 			<div className='grid md:grid-cols-2 gap-8'>
 				<div>

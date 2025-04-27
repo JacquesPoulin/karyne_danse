@@ -51,7 +51,7 @@ export default function SocialLinks({
           `}
                     target='_blank'
                     rel='noopener noreferrer'
-                    aria-label={`Suivez-nous sur ${link.name}`}>
+                    aria-label={`Suivez-moi sur ${link.name}`}>
                     {/* Méthode sécurisée pour cloner l'icône avec une taille */}
                     {React.isValidElement(link.icon) 
                         ? React.cloneElement(link.icon, {

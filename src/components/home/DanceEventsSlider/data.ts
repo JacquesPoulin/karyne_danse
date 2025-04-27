@@ -60,7 +60,7 @@ export const eventsByMonth: MonthEvents = {
 			location: "Studio Karyn'",
 			image: '/images/events/rentree.jpg',
 			description:
-				"Cet événement est déjà passé. C'était un atelier de découverte des techniques fondamentales du Hip Hop avec notre professeur certifié.",
+				"Cet événement est déjà passé. C'était un atelier de découverte des techniques fondamentales du Hip Hop.",
 		},
 		{
 			id: 2,
@@ -71,7 +71,7 @@ export const eventsByMonth: MonthEvents = {
 			location: "Studio Karyn'",
 			image: '/images/dances/hiphop.jpg',
 			description:
-				'Venez découvrir les techniques fondamentales du Hip Hop avec notre professeur certifié. Ce workshop est ouvert à tous les niveaux.',
+				'Venez découvrir les techniques fondamentales du Hip Hop. Ce workshop est ouvert à tous les niveaux.',
 		},
 	],
 	Juin: [
@@ -95,7 +95,7 @@ export const eventsByMonth: MonthEvents = {
 			location: 'Club Urban Dance',
 			image: '/images/dances/dancehall.jpg',
 			description:
-				"Venez défier d'autres danseurs ou simplement profiter du spectacle lors de notre battle annuelle de DanceHall.",
+				"Venez défier d'autres danseurs ou simplement profiter du spectacle lors de la battle annuelle de DanceHall.",
 		},
 	],
 	Juillet: [
@@ -122,7 +122,7 @@ export const eventsByMonth: MonthEvents = {
 			location: "Studio Karyn'",
 			image: '/images/events/rentree.jpg',
 			description:
-				"C'est la rentrée! Découvrez notre nouveau planning et inscrivez-vous à nos cours hebdomadaires pour la saison 2025-2026.",
+				"C'est la rentrée! Découvrez le nouveau planning et inscrivez-vous aux cours hebdomadaires pour la saison 2025-2026.",
 		},
 	],
 };

@@ -59,7 +59,7 @@ export default function Hero() {
 							<Link
 								href='/cours-workshops'
 								className='px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium inline-block'>
-								Découvrir nos cours
+								Découvrir les ateliers/workshops
 							</Link>
 						</motion.div>
 

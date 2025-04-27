@@ -20,7 +20,7 @@ const rockSalt = Rock_Salt({
 });
 
 export const metadata: Metadata = {
-	title: "Karyn' Danse - École de danse",
+	title: "Karyn' Danse - Cours de danse / Workshops",
 	description:
 		"Cours de danse avec Karyn' - Apprenez à danser dans une ambiance conviviale",
 };

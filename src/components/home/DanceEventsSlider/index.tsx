@@ -79,7 +79,7 @@ export default function DanceEventsSlider() {
 						Événements <span className='text-purple-500'>à venir</span>
 					</h2>
 					<p className='text-gray-300 max-w-2xl mx-auto'>
-						Consultez notre calendrier pour ne manquer aucun événement
+						Consultez le calendrier pour ne manquer aucun événement
 					</p>
 				</motion.div>
 

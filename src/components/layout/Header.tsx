@@ -114,10 +114,10 @@ export default function Header() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.5 }}
-			className={`fixed w-full z-50 transition-all duration-300 ${
+			className={`fixed w-full z-50 transition-all duration-500 ${
 				scrolled
-				? 'bg-white/90 backdrop-blur-sm shadow-md py-6' // Style avec arrière-plan lors du défilement
-				: 'bg-transparent py-6' // Style transparent sans arrière-plan ni pointeurs
+					? 'bg-gradient-to-b backdrop-blur-lg border-b border-white/10 shadow-[0_8px_32px_rgba(31,38,135,0.15)] py-6' // Glassmorphisme avancé
+					: 'bg-transparent py-6' // Style transparent sans arrière-plan
 			}`}>
 			<nav className='container mx-auto px-4'>
 				<div className='flex justify-between items-center'>
@@ -135,8 +135,8 @@ export default function Header() {
 								<motion.span
 									className={
 										scrolled
-											? 'font-rock text-2xl md:text-3xl font-bold bg-gradient-to-r from-karyn-500 to-karyn-950 bg-clip-text text-transparent inline-block'
-											: 'font-rock text-2xl md:text-3xl font-bold bg-gradient-to-r from-karyn-100 to-karyn-200 bg-clip-text text-transparent inline-block'
+											? 'font-rock text-2xl md:text-3xl font-bold bg-gradient-to-r from-karyn-300 to-karyn-600 bg-clip-text text-transparent inline-block'
+											: 'font-rock text-2xl md:text-3xl font-bold bg-gradient-to-r from-karyn-100 to-karyn-300 bg-clip-text text-transparent inline-block'
 									}
 									animate={
 										isGlitching
@@ -240,8 +240,8 @@ export default function Header() {
 										pathname === link.href
 											? 'text-white' // Le lien actif reste blanc
 											: scrolled
-											? 'text-karyn-950 hover:text-primary-dark' // Quand on défile, texte foncé avec hover violet foncé
-											: 'text-gray-100 hover:text-white' // En haut de page, texte presque blanc avec hover blanc pur
+											? 'text-karyn-100 hover:text-karyn-800' // Quand on défile, texte foncé avec hover violet foncé
+											: 'text-gray-100 hover:text-karyn-100' // En haut de page, texte presque blanc avec hover blanc pur
 									}`}>
 									{/* Background animation on hover */}
 									<motion.span

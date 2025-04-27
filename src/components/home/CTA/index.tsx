@@ -68,7 +68,7 @@ export default function CTA() {
         </h2>
         <p className='text-xl md:text-2xl mb-12 max-w-2xl mx-auto text-white/90 animate-item'>
           {/* Premier cours d'essai <span className='font-bold'>gratuit</span>. */}
-          Rejoignez-nous et découvrez votre style !
+          Rejoignez-moi et découvrez votre style !
         </p>
         <div className='animate-item'>
           <motion.div

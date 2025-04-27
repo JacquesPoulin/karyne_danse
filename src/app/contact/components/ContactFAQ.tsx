@@ -36,7 +36,7 @@ export default function ContactFAQ() {
             <button
               onClick={() => toggleFAQ(index)}
               className={`w-full text-left p-4 flex justify-between items-center focus:outline-none ${
-                openIndex === index ? 'bg-karyn-100' : 'bg-white'
+                openIndex === index ? 'bg-karyn-100' : 'bg-karyn-50'
               }`}
             >
               <h3 className='text-lg font-medium text-karyn-950'>{faq.question}</h3>

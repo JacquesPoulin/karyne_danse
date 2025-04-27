@@ -19,9 +19,9 @@ export default function ContactInfo({ address, phone, email, openModal }: Contac
 
   return (
     <div>
-      <h2 className='text-2xl font-semibold mb-4'>
+      {/* <h2 className='text-2xl font-semibold mb-4'>
         Informations de contact
-      </h2>
+      </h2> */}
       <p className='mb-2'>
         <strong>Adresse:</strong>{' '}
         <a 
@@ -52,7 +52,7 @@ export default function ContactInfo({ address, phone, email, openModal }: Contac
         </a>
       </p>
       <h3 className='text-xl font-semibold mt-6 mb-3'>
-        Horaires d'ouverture
+        Horaires des cours
       </h3>
       <p className='mb-1'>Lundi - Vendredi: {hours.weekdays}</p>
       <p className='mb-1'>Samedi: {hours.saturday}</p>

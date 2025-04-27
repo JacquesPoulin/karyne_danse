@@ -5,7 +5,7 @@ import { regularCourses } from '@/data/courses';
 
 export const metadata: Metadata = {
     title: "Cours & Workshops - Karyn' Danse",
-    description: 'Découvrez nos cours de Hip Hop, Ragga, DanceHall et workshops',
+    description: 'Découvrez mes cours de Hip Hop, Ragga, DanceHall et workshops',
 };
 
 export default function CoursWorkshops() {

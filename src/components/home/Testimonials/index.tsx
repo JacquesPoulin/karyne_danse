@@ -40,11 +40,10 @@ export default function Testimonials() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}>
           <h2 className='text-4xl font-bold mb-4'>
-            Ce que disent <span className='text-purple-400'>nos élèves</span>
+            Ce que disent <span className='text-purple-400'>les élèves</span>
           </h2>
           <p className='text-gray-400 max-w-2xl mx-auto'>
-            Découvrez les expériences de ceux qui ont déjà rejoint notre école
-            de danse
+            Découvrez les expériences de ceux qui ont déjà rejoint mes ateliers de danse !
           </p>
         </motion.div>
 

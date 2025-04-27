@@ -61,7 +61,7 @@ export default function DynamicWorkshops() {
       <div className="border rounded-lg p-6 text-center bg-gray-50">
         <h3 className="text-xl font-semibold mb-2">Aucun workshop prévu pour le moment</h3>
         <p className="text-gray-600">
-          Revenez bientôt pour découvrir nos prochains événements !
+          Revenez bientôt pour découvrir les prochains événements !
         </p>
       </div>
     );
@@ -92,7 +92,7 @@ export default function DynamicWorkshops() {
             <p className="text-gray-600 mb-1">
               <span className="font-medium">Lieu:</span> {workshop.location}
             </p>
-            <p className="mb-4">{workshop.description || "Informations à venir. Contactez-nous pour en savoir plus !"}</p>
+            <p className="mb-4">{workshop.description || "Informations à venir. Contactez-moi pour en savoir plus !"}</p>
             <Link 
               href={`/contact?event=${encodeURIComponent(workshop.title)}`}
               className="inline-block text-karyn-500 hover:text-karyn-600 font-medium transition-colors"

@@ -28,15 +28,15 @@ export const contactData = {
   faqs: [
     {
       question: "Comment s'inscrire aux cours ?",
-      answer: "Vous pouvez vous inscrire directement à l'école pendant nos heures d'ouverture, ou nous contacter par téléphone ou email pour réserver votre place."
+      answer: "Vous pouvez me contacter par téléphone, email ou via le formulaire pour réserver votre place."
     },
     {
       question: "Proposez-vous des cours d'essai ?",
-      answer: "Oui, nous proposons un cours d'essai gratuit pour vous permettre de découvrir notre école et nos méthodes d'enseignement."
+      answer: "Oui, je propose un cours d'essai gratuit pour vous permettre de découvrir mes méthodes d'enseignement."
     },
     {
       question: "Quel équipement faut-il prévoir ?",
-      answer: "Pour votre premier cours, une tenue confortable et des chaussettes suffiront. Nous vous conseillons ensuite sur l'équipement spécifique selon le type de danse choisi."
+      answer: "Pour votre premier cours, une tenue confortable et des chaussures adaptées suffiront."
     }
   ],
   
