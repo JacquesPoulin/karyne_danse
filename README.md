@@ -141,10 +141,9 @@ Accède à <http://localhost:3000> dans ton navigateur.
 
 ## 📁 Structure du projet
 
-plaintext
-
+```plaintext
 karyn_danse/
-├── .env                   # Variables d’environnement
+├── .env                   # Variables d'environnement
 ├── public/                # Assets statiques (images, fonts…)
 ├── src/
 │   ├── actions/           # Server Actions (ex : contactActions.ts)
@@ -154,7 +153,7 @@ karyn_danse/
 │   │   │   ├── data.ts
 │   │   │   └── page.tsx
 │   │   ├── cours/         # Page Cours
-│   │   └── page.tsx       # Page d’accueil
+│   │   └── page.tsx       # Page d'accueil
 │   ├── components/
 │   │   ├── layout/        # Header, Footer…
 │   │   └── ui/            # Composants réutilisables
@@ -162,6 +161,7 @@ karyn_danse/
 │       └── globals.css    # Tailwind globals
 ├── tailwind.config.js     # Config Tailwind
 └── tsconfig.json          # Config TypeScript
+```
 
 ---
 
