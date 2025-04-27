@@ -14,7 +14,7 @@ export default function EventImage({ src, alt, className = "" }: EventImageProps
   
   return (
     <Image
-      src={hasError ? '/images/placeholder-workshop.jpg' : src}
+      src={hasError ? '/images/karyn/received_1201557247089557.jpeg' : src}
       alt={alt}
       fill
       className={`object-cover ${className}`}

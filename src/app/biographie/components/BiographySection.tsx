@@ -38,7 +38,8 @@ export default function BiographySection() {
 						{/* Image principale */}
 						<div className='relative h-full w-full rounded-lg overflow-hidden shadow-2xl ring-1 ring-purple-500/30'>
 							<Image
-								src='/images/karyn/received_1169907270545682.jpeg'
+								// src='/images/karyn/received_1169907270545682.jpeg'
+								src='/images/karyn/IMG-20221001-WA0026.jpg'
 								alt='Karyn - Professeure de danse'
 								fill
 								sizes='(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 30vw'

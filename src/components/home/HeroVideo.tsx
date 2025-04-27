@@ -36,7 +36,6 @@ export default function HeroVideo() {
       if (playPromise !== undefined) {
         playPromise
           .then(() => {
-            console.log('✅ Vidéo lecture réussie!');
             setPlayAttemptInProgress(false);
           })
           .catch(error => {

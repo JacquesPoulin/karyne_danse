@@ -58,7 +58,7 @@ export const eventsByMonth: MonthEvents = {
 			fullDate: '2024-05-10',
 			time: '14h - 17h',
 			location: "Studio Karyn'",
-			image: '/images/workshop1.jpg',
+			image: '/images/events/rentree.jpg',
 			description:
 				"Cet événement est déjà passé. C'était un atelier de découverte des techniques fondamentales du Hip Hop avec notre professeur certifié.",
 		},
